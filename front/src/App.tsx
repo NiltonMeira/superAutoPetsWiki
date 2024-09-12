@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import { AppBar } from './components/AppBar/AppBar'
+import { AppBar } from './components/AppBar/appBar'
 
 interface IAppProps {
   children:ReactNode

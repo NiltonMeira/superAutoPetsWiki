@@ -7,8 +7,12 @@ export const SAppBar = styled(Box)(({theme}) => ({
     justifyContent: "space-between",
 
     padding: "25px",
+    width: "100vw",
 
-    backgroundColor: theme.palette.background.paper,
+    // backgroundColor: theme.palette.background.paper,
+    position: "fixed",
+    backdropFilter: "blur(4px)"
+
 
 
 }))
@@ -28,13 +32,13 @@ export const Slink = styled(Link)`
     text-decoration: none;
     color: white;
     font-size: 1.8rem;
-    transition: 1s;
+    transition: 0.5s;
 
     &:hover{
         color:#fe5900;
-        transform: scale(1.5) rotate(18000deg);
+        transform: scale(1.1) rotate(18000deg);
     }
-    
+
 `
 
 export const SImg = styled("img")`
