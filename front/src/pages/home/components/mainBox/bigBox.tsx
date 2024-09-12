@@ -1,6 +1,6 @@
 import { SMainBox } from "./style"
 
-export const BIgBox = () => {
+export const BigBox = () => {
     return (
         <>
             <SMainBox>

@@ -1,9 +1,9 @@
-import { BIgBox } from "./components/mainBox/BigBox"
+import { BigBox } from "./components/mainBox/bigBox"
 
 export const Home = () => {
     return(
     <>
-        <BIgBox/>
+        <BigBox/>
     </>
     )
 }

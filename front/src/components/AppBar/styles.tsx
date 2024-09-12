@@ -2,27 +2,25 @@ import { Box, styled } from "@mui/material";
 import { Link } from "react-router-dom";
 
 export const SAppBar = styled(Box)`
-    display: "flex";
-    align-items: "center";
-    justify-content: "space-between";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    padding: "25px";
-    width: "100vw";
-    position: "fixed";
-    backdrop-filter: "blur(4px)";
+    padding: 25px;
+    width: 100vw;
+    position: fixed;
+    backdrop-filter: blur(4px);
 `
 
-
-
-
 export const STitles = styled(Box)`
-    display: "flex";
-    justify-content: "space-around";
-    gap: "70px";
+    display: flex;
+    justify-content: space-around;
+
+    gap: 70px;
 `
 
 export const SLogin = styled(Box)`
-    display: "flex",
+    display: flex;
 `
 
 export const Slink = styled(Link)`
