@@ -1,17 +1,17 @@
 import { Box, styled } from "@mui/material";
 
-export const SMainBox = styled(Box)(({theme}) => ({
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
+export const SMainBox = styled(Box)`
+    display: "flex";
+    align-items: "center";
+    justify-content: "space-between";
 
-    width: "100vw",
-    height: "100vh",
+    width: "100vw";
+    height: "100vh";
     
-    padding: "25px",
+    padding: "25px";
 
-    backgroundImage:'url("/images/background.jpg")',
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "100%"
-}))
+    background-image:'url("/images/background.jpg")';
+    background-repeat: "no-repeat";
+    background-size: "100%";
+`
 
