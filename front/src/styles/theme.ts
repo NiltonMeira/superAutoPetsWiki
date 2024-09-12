@@ -2,23 +2,18 @@ import { createTheme } from "@mui/material";
 
 const theme = createTheme({
     palette: {
-        success: {
-            main: "#00FF00"
-        },
         background: {
-            default: "#41414a",
-            paper: "#292929" //used to AppBar backgound
+            default: "#FFFFFF",
+            paper: "#4bbaef" //used to AppBar backgound
         },
 
         primary: {
-            main: "#f6bd20"
+            main: "#fe5900" //ORANGE.
         },
         secondary: {
-            main: "#A42CD6"
+            main: "#53b00a" //green
         },
-        text: {
-            primary: "#FFFFFF"
-        }
+        
 
     },
 
