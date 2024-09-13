@@ -140,6 +140,9 @@ export const SInput = styled("input")`
     
     position: relative;
     z-index: 0;
+
+    font-family: "Super";
+    font-size: 1.5rem;
     
     @media (max-width: 480px) {
         padding: 0.8rem;
