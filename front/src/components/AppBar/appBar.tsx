@@ -22,7 +22,7 @@ export const AppBar = () => {
                 </STitles>
 
                 <SLogin>
-                    <Slink to={"/"}>
+                    <Slink to={"/login"}>
                         <SImgLogin src="/images/login.png" alt="" />
                     </Slink>
                 </SLogin>

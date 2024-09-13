@@ -1,11 +1,13 @@
-import { SDiv, SDog, SForm, SInput, SLinkComponent, SLinkComponentMinor, SMainBox } from "./style"
+import { SDiv, SDog, SForm, SInput, SInputWrapper, SLinkComponent, SLinkComponentMinor, SMainBox } from "./style"
 
 export const BigBox = () => {
     return (
         <>
             <SMainBox>
                 <SForm action="">
-                    <SInput></SInput>
+                    <SInputWrapper>
+                        <SInput placeholder="Type a pet or a food"/>
+                    </SInputWrapper>
                 </SForm>
                 <SLinkComponent to={""}>
                     <SDiv>

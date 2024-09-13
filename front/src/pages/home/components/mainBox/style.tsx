@@ -114,18 +114,52 @@ export const SForm = styled("form")`
     
 `;
 
+export const SInputWrapper = styled("div")`
+    position: relative;
+    width: 100%;
+
+    &::after {
+        content: '';
+        background-image: url('images/procurar.png');
+        background-size: contain;
+        position: absolute;
+        top: 15%;
+        right: 10px;
+        z-index: 10;
+        width: 25px;
+        height: 25px;
+    }
+`;
+
 export const SInput = styled("input")`
     width: 100%; /* Ajustado para evitar problemas de overflow */
-    padding: 5px;
+    padding: 10px;
 
     border-radius: 5px;
     border: none;
-
+    
+    position: relative;
+    z-index: 0;
+    
     @media (max-width: 480px) {
         padding: 0.8rem;
         font-size: 0.9rem;
     }
 `;
+
+// export const SSSInput = styled("input")(() => ({
+//     position: "relative",
+//     '&::after': {
+//         content: "''",
+//         position: "absolute",
+//         width: 100,
+//         height: 100,
+//         top: 0,
+//         left: 0,
+//         backgroundColor: "red",
+//         display: "block"
+//     }
+// }))
 
 
 
