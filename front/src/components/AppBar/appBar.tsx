@@ -17,7 +17,7 @@ export const AppBar = () => {
 
                 <STitles>
                     <Slink to={"/"}>Home</Slink>
-                    <Slink to={"/"}>Pets</Slink>
+                    <Slink to={"/pets"}>Pets</Slink>
                     <Slink to={"/"}>Foods</Slink>
                 </STitles>
 
@@ -35,9 +35,9 @@ export const AppBar = () => {
             <Modal open={open} onClose={handleClose}>
                 <SModalBox>
                     <Slink to={"/"} onClick={handleClose}>Home</Slink>
-                    <Slink to={"/"} onClick={handleClose}>Pets</Slink>
+                    <Slink to={"/pets"} onClick={handleClose}>Pets</Slink>
                     <Slink to={"/"} onClick={handleClose}>Foods</Slink>
-                    <Slink to={"/"} onClick={handleClose}>
+                    <Slink to={"/login"} onClick={handleClose}>
                         <SImgLogin src="/images/login.png" alt="Login" />
                     </Slink>
                 </SModalBox>
