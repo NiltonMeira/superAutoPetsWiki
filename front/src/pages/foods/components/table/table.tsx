@@ -18,6 +18,7 @@ export const BasicTable = () => {
         return { name, effect, turn, img }
     }
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const getData = async () => {
         try {
             const response = await api.get("f")
@@ -35,7 +36,7 @@ export const BasicTable = () => {
 
     useEffect(() => {
         getData()
-    }, [])
+    }, [getData])
 
     return (
         <TableContainer style={{ maxHeight: '100%', overflowY: 'auto'}}>
