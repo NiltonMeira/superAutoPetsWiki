@@ -34,9 +34,8 @@ export const DarkBrownBox = styled(Box)`
     justify-content: center;
     align-items: center;
 
-    width: 70%;
-    height: 25%;
-    font-size: 7rem;
+    width: 80%;
+    font-size: 3rem;
     border: black solid 7px;
     border-radius: 8px;
 
@@ -61,9 +60,11 @@ export const LightBrownBox = styled(Box)`
     width: 95%;
 
     display: flex;
-    align-items: center;
+    flex-direction: column;
     padding: 30px;
 
     border-radius: 8px;
     gap: 30px;
 `;
+
+
