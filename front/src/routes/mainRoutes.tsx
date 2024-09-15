@@ -21,6 +21,13 @@ const MainRoutes = createBrowserRouter([
     },
     {
         path: "/pets",
+        element: 
+        <App>
+            <></>
+        </App>
+    },
+    {
+        path: "/foods",
         element:
         <App>
             <Foods/>

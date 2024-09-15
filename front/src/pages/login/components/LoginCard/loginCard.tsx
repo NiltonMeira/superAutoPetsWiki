@@ -40,12 +40,13 @@ export const LoginCard = () => {
             }
         } catch(err){
             toast.error("Erro ao fazer login")
+            console.log(err);
         }
     
     }
 
     const validateEmail = (inputValue: string) => {
-        let emailRegex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
+        const emailRegex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
         return emailRegex.test(inputValue)
     }
 
