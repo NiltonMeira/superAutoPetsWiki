@@ -3,13 +3,12 @@ import { Box, styled } from "@mui/material";
 export const SMainBox = styled(Box)`
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 
     width: 100vw;
     height: 100vh;
     padding: 25px;
-    padding-top: 50px;
+    padding-top: 150px;
     gap: 20px;
 
     background-image: url(/images/background.jpg);
@@ -38,6 +37,7 @@ export const DarkBrownBox = styled(Box)`
     font-size: 3rem;
     border: black solid 7px;
     border-radius: 8px;
+    padding: 30px;
 
     @media (max-width: 768px) {
         width: 80%;
@@ -55,9 +55,7 @@ export const DarkBrownBox = styled(Box)`
 
 export const LightBrownBox = styled(Box)`
     background-color: #f7cc8c;
-
-    height: 82%;
-    width: 95%;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -65,6 +63,9 @@ export const LightBrownBox = styled(Box)`
 
     border-radius: 8px;
     gap: 30px;
+    
+    /* Remove a height fixed to allow dynamic growth */
+    min-height: 200px; /* Optional: set a minimum height */
 `;
 
 

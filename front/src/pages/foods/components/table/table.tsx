@@ -34,16 +34,15 @@ export const BasicTable = () => {
     }
 
     useEffect(() => {
-        getData() 
+        getData()
     }, [])
 
     return (
-        <TableContainer>
+        <TableContainer style={{ maxHeight: '100%', overflowY: 'auto'}}>
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
                 <TableHead>
                     <TableRow>
                         <TableCell>Foods</TableCell>
-                        <TableCell align="right">Name</TableCell>
                         <TableCell align="right">Effect</TableCell>
                         <TableCell align="right">Turn</TableCell>
                         <TableCell align="right">Image</TableCell>
@@ -61,7 +60,7 @@ export const BasicTable = () => {
                             <TableCell align="right">{row.effect}</TableCell>
                             <TableCell align="right">{row.turn}</TableCell>
                             <TableCell align="right">
-                                <img src={row.img} alt={row.name} style={{ width: '50px' }} />
+                                <img src={row.img} alt={row.name} style={{ maxWidth: '50px', height: 'auto' }} />
                             </TableCell>
                         </TableRow>
                     ))}
